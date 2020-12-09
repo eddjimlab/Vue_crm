@@ -1,5 +1,8 @@
 <template>
-  <ul class="sidenav app-sidenav" :class="{open: value}">
+  <ul
+    class="sidenav app-sidenav"
+    :class="{open: value}"
+  >
     <router-link
       v-for="link in links"
       :key="link.url"
@@ -11,7 +14,7 @@
       <a
         href="#"
         class="waves-effect waves-orange pointer"
-      >{{link.title}} </a>
+      >{{link.title | localize}} </a>
     </router-link>
   </ul>
 </template>
@@ -20,11 +23,11 @@ export default {
   props: ['value'],
   data: () => ({
     links: [
-      { title: 'Счет', url: '/', exact: true },
-      { title: 'История', url: '/history' },
-      { title: 'Планирование', url: '/planning' },
-      { title: 'Новая запись', url: '/record' },
-      { title: 'Категория', url: '/categories' }
+      { title: 'AccountTitle', url: '/', exact: true },
+      { title: 'HistoryTitle', url: '/history' },
+      { title: 'PlanningTitle', url: '/planning' },
+      { title: 'NewRecordTitle', url: '/record' },
+      { title: 'CategoryTitle', url: '/categories' }
     ]
   })
 }

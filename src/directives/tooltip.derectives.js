@@ -1,6 +1,7 @@
+import localizeFilter from '@/filters/localize.filter'
 export default {
-  bind (el, { value }) {
-    M.Tooltip.init(el, { html: value })// eslint-disable-line
+  bind (el, { value, modifiers }) {
+    M.Tooltip.init(el, { html: modifiers.noloc ? value : localizeFilter(value) })// eslint-disable-line
   },
   unbind (el) {
     const tooltip = M.Tooltip.getInstance(el)// eslint-disable-line

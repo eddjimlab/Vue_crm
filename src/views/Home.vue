@@ -2,7 +2,7 @@
   <div class="home">
     <div>
       <div class="page-title">
-        <h3>Счет</h3>
+        <h3>{{'AccountTitle' | localize}}</h3>
 
         <button
           class="btn waves-effect waves-light btn-small"
@@ -31,6 +31,14 @@ import HomeBill from '@/components/HomeBill'
 import HomeCurrency from '@/components/HomeCurrency'
 
 export default {
+  metaInfo () {
+    return {
+      title: this.$title('CategoryTitle'),
+      meta: [
+        { name: 'description', content: 'Сайт учета расходов и доходов, с учетом категорий и бюджета, графический анализ, CRM Vue' }
+      ]
+    }
+  },
   name: 'home',
   data: () => ({
     loading: true,

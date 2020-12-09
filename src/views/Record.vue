@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="page-title">
-      <h3>Новая запись</h3>
+      <h3>{{'NewRecordTitle'|localize}}</h3>
     </div>
     <Loader v-if="loading" />
     <p
@@ -25,7 +25,7 @@
             :value="c.id"
           >{{c.title}} </option>
         </select>
-        <label>Выберите категорию</label>
+        <label>{{'Category_SelectCategory'|localize}}</label>
       </div>
       <p>
         <label>
@@ -36,7 +36,7 @@
             value="income"
             v-model="type"
           />
-          <span>Доход</span>
+          <span>{{'Income'|localize}}</span>
         </label>
       </p>
       <p>
@@ -48,7 +48,7 @@
             value="outcome"
             v-model="type"
           />
-          <span>Расход</span>
+          <span>{{'Outcome'|localize}}</span>
         </label>
       </p>
 
@@ -59,11 +59,11 @@
           v-model.number="amount"
           :class="{invalid: $v.amount.$dirty && !$v.amount.minValue}"
         >
-        <label for="amount">Сумма</label>
+        <label for="amount">{{'Sum'|localize}}</label>
         <span
           v-if="$v.amount.$error"
           class="helper-text invalid"
-        >Минимальная значение {{$v.amount.$params.minValue.min}} </span>
+        >{{'Category_minimalAmount'|localize}} {{$v.amount.$params.minValue.min}} </span>
       </div>
 
       <div class="input-field">
@@ -73,18 +73,18 @@
           v-model="description"
           :class="{invalid: validateDesc}"
         >
-        <label for="description">Описание</label>
+        <label for="description">{{'Description'|localize}}</label>
         <span
           v-if="$v.description.$error"
           class="helper-text invalid"
-        >Введите описание</span>
+        >{{'EnterDesc'|localize}}</span>
       </div>
 
       <button
         class="btn waves-effect waves-light"
         type="submit"
       >
-        Создать
+        {{'CreateCategory'|localize}}
         <i class="material-icons right">send</i>
       </button>
     </form>
@@ -94,6 +94,14 @@
 import { required, minValue } from 'vuelidate/lib/validators'
 import { mapGetters } from 'vuex'
 export default {
+  metaInfo () {
+    return {
+      title: this.$title('CategoryTitle'),
+      meta: [
+        { name: 'description', content: 'Сайт учета расходов и доходов, с учетом категорий и бюджета, графический анализ, CRM Vue' }
+      ]
+    }
+  },
   name: 'record',
   data: () => ({
     loading: true,

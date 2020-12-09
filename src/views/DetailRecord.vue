@@ -39,6 +39,14 @@
 </template>
 <script>
 export default {
+  metaInfo () {
+    return {
+      title: this.$title('CategoryTitle'),
+      meta: [
+        { name: 'description', content: 'Сайт учета расходов и доходов, с учетом категорий и бюджета, графический анализ, CRM Vue' }
+      ]
+    }
+  },
   name: 'detailRecord',
   data: () => ({
     loading: true,

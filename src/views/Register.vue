@@ -4,7 +4,7 @@
     @submit.prevent="submitHandler"
   >
     <div class="card-content">
-      <span class="card-title">Домашняя бухгалтерия</span>
+      <span class="card-title">{{'Register_HomeAccounting' | localize}}</span>
       <div class="input-field">
         <input
           id="email"
@@ -29,11 +29,11 @@
           v-model.trim="password"
           :class="{invalid: ($v.password.$dirty && !$v.password.required) || ($v.password.$dirty && !$v.password.minLength)}"
         >
-        <label for="password">Пароль</label>
+        <label for="password">{{'Register_Password'| localize}}</label>
         <small
           class="helper-text invalid"
           v-if="$v.password.$dirty && !$v.password.required"
-        >Введите пароль</small>
+        >{{'Register_EnterPassword'| localize}}</small>
         <small
           class="helper-text invalid"
           v-else-if="$v.password.$dirty && !$v.password.minLength"
@@ -46,7 +46,7 @@
           v-model.trim="name"
           :class="{invalid: $v.name.$dirty && !$v.name.required}"
         >
-        <label for="name">Имя</label>
+        <label for="name">{{'name' | localize}}</label>
         <small
           class="helper-text invalid"
           v-if="$v.name.$dirty && !$v.name.required"
@@ -84,6 +84,14 @@
 import { email, required, minLength } from 'vuelidate/lib/validators'
 
 export default {
+  metaInfo () {
+    return {
+      title: this.$title('Register_title'),
+      meta: [
+        { name: 'description', content: 'Сайт учета расходов и доходов, с учетом категорий и бюджета, графический анализ, CRM Vue' }
+      ]
+    }
+  },
   name: 'register',
   data: () => ({
     email: '',

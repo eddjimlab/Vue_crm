@@ -4,11 +4,11 @@
       <thead>
         <tr>
           <th>#</th>
-          <th>Сумма</th>
-          <th>Дата</th>
-          <th>Категория</th>
-          <th>Тип</th>
-          <th>Открыть</th>
+          <th>{{'Sum'|localize}}</th>
+          <th>{{'HomeCurrency_Date'|localize}}</th>
+          <th>{{'Category'|localize}}</th>
+          <th>{{'Type'|localize}}</th>
+          <th>{{'Open'|localize}}</th>
         </tr>
       </thead>
       <tbody>
@@ -29,7 +29,7 @@
           <td>
             <button
               data-position="left"
-              v-tooltip="`Посмотреть запись`"
+              v-tooltip="`RecordDetails`"
               class="btn-small btn"
               @click="$router.push('/detailRecord/' + record.id)"
             >

@@ -62,6 +62,14 @@
 import { email, required, minLength } from 'vuelidate/lib/validators'
 import messages from '@/plugins/messages'
 export default {
+  metaInfo () {
+    return {
+      title: this.$title('CategoryTitle'),
+      meta: [
+        { name: 'description', content: 'Сайт учета расходов и доходов, с учетом категорий и бюджета, графический анализ, CRM Vue' }
+      ]
+    }
+  },
   name: 'login',
   data: () => ({
     email: '',
