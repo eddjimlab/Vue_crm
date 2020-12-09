@@ -1,0 +1,49 @@
+{
+  "ProfileTitle": "Профиль",
+  "Logout": "Выйти",
+  "Name": "Имя",
+  "Type": "Тип",
+  "Open": "Открыть",
+  "Sum": "Сумма",
+  "Prev": "Назад",
+  "Next": "Вперед",
+  "Income": "Доход",
+  "Outcome": "Расход",
+  "Description": "Описание",
+  "EnterDesc": "Введите описание",
+  "Message_enter_name": "Введите имя",
+  "Update": "Обновить",
+  "AccountTitle": "Счет",
+  "HistoryTitle": "История",
+  "PlanningTitle": "Планирование",
+  "NewRecordTitle": "Новая запись",
+  "RecordDetails": "Посмотреть запись",
+  "CategoryTitle": "Категории",
+  "Category": "Категории",
+  "NoCategories": "Категорий пока нет",
+  "CreateCategory": "Создать",
+  "Category_Name": "Название",
+  "Category_EnterCategoryName": "Введите название категории",
+  "Category_limit": "Лимит",
+  "Category_minimalAmount": "Минимальное значение",
+  "Category_Edit": "Редактировать",
+  "Category_SelectCategory": "Выберите категорию",
+  "HomeBill_accountCurrency": "Счет в валюте",
+  "HomeCurrency_CurrencyRate": "Курс валют",
+  "HomeCurrency_Currency": "Валюта",
+  "HomeCurrency_Rate": "Курс",
+  "HomeCurrency_Date": "Дата",
+  "Register_title": "Регистрация",
+  "Register_HomeAccounting": "Домашняя бухгалтерия",
+  "Register_Password": "Пароль",
+  "Register_EnterPassword": "Введите пароль",
+  "History_title": "История записей",
+  "History_CategoryEmpty": "Категорий пока нет"
+
+
+
+
+
+
+
+}

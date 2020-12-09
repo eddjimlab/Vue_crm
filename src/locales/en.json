@@ -1,0 +1,48 @@
+{
+  "ProfileTitle": "Profile",
+  "Logout": "Logout",
+  "Name": "Name",
+  "Type": "Type",
+  "Open": "Open",
+  "Sum": "Sum",
+  "Prev": "Prev",
+  "Next": "Next",
+  "Income": "Income",
+  "Outcome": "Outcome",
+  "Description": "Description",
+  "EnterDesc": "Enter description",
+  "Message_enter_name": "Enter name",
+  "Update": "Update",
+  "AccountTitle": "Account",
+  "HistoryTitle": "History",
+  "PlanningTitle": "Planning",
+  "NewRecordTitle": "New Record",
+  "RecordDetails": "Details",
+  "CategoryTitle": "Categories",
+  "Category": "Category",
+  "NoCategories": "Don`t have any category",
+  "CreateCategory": "Create",
+  "Category_Name": "Name",
+  "Category_EnterCategoryName": "Enter Category name",
+  "Category_limit": "Limit",
+  "Category_minimalAmount": "Minimal amount",
+  "Category_Edit": "Edit",
+  "Category_SelectCategory": "Select Category",
+  "HomeBill_accountCurrency": "Account in currency",
+  "HomeCurrency_CurrencyRate": "Currency Rate",
+  "HomeCurrency_Currency": "Currency",
+  "HomeCurrency_Rate": "Rate",
+  "HomeCurrency_Date": "Date",
+  "Register_title": "Register",
+  "Register_HomeAccounting": "HomeAccounting",
+  "Register_Password": "Password",
+  "Register_EnterPassword": "Enter Password",
+  "History_title": "History",
+  "History_CategoryEmpty": "Category list is empty"
+
+
+
+
+
+
+}
